@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+  <form class="calc">
+    <p class="calc-display">
+      <input type="text" name="res" id="res" value="0" class="calc-display-input" onfocus="this.blur()">
+    </p>
+    <p class="calc-row">
+      <button type="button" class="calc-button calc-button-gray" onclick="kvadrat()">x<sup>2</sup></button>
+      <button type="button" class="calc-button calc-button-gray" onclick="kub()">x<sup>3</sup></button>
+      <button type="button" class="calc-button calc-button-gray" onclick="koren()">&radic;</button>
+      <button type="button" class="calc-button calc-button-red calc-button-big" onclick="akcija('deljenje')">÷</button>
+    </p>
+    <p class="calc-row">
+      <button type="button" class="calc-button" onclick="prikaz('7')">7</button>
+      <button type="button" class="calc-button" onclick="prikaz('8')">8</button>
+      <button type="button" class="calc-button" onclick="prikaz('9')">9</button>
+      <button type="button" class="calc-button calc-button-red calc-button-big" onclick="akcija('mnozenje')">x</button>
+    </p>
+    <p class="calc-row">
+      <button type="button" class="calc-button" onclick="prikaz('4')">4</button>
+      <button type="button" class="calc-button" onclick="prikaz('5')">5</button>
+      <button type="button" class="calc-button" onclick="prikaz('6')">6</button>
+      <button type="button" class="calc-button calc-button-red calc-button-big" onclick="akcija('oduzimanje')">-</button>
+    </p>
+    <p class="calc-row">
+      <button type="button" class="calc-button" onclick="prikaz('1')">1</button>
+      <button type="button" class="calc-button" onclick="prikaz('2')">2</button>
+      <button type="button" class="calc-button" onclick="prikaz('3')">3</button>
+      <button type="button" class="calc-button calc-button-red calc-button-big" onclick="akcija('sabiranje')">+</button>
+    </p>
+    <p class="calc-row">
+      <button type="button" class="calc-button" onclick="prikaz('0')">0</button>
+      <button type="button" class="calc-button" onclick="zarez()">.</button>
+      <button type="button" class="calc-button" onclick="brisanje()">C</button>
+      <button type="button" class="calc-button calc-button-yellow calc-button-big" onclick="rezultat()">=</button>
+    </p>
+  </form>
+  <script type="text/javascript" src="js/calculator.js"></script>
+</body>
+</html>
